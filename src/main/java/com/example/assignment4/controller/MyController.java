@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 @RestController
-@RequestMapping("/menu")
+@RequestMapping("/menju")
 public class MyController {
 
     @GetMapping
@@ -30,8 +30,13 @@ public class MyController {
         return "Item deleted";
     }
 
-    @GetMapping("/test")
-    public String test() {
-        return "OK";
+    @PutMapping("/{name}")
+    public String updatePrice(
+            @PathVariable String name,
+            @RequestBody MenuItemDTO dto
+    ) throws SQLException {
+        MenuItemDAO.updatePrice(name, dto.getPrice());
+        return "Price updated";
     }
+
 }

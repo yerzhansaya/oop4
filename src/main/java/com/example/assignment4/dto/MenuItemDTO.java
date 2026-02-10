@@ -26,6 +26,7 @@ public class MenuItemDTO {
     }
 
     public String getCategory() {
+
         return category;
     }
 }

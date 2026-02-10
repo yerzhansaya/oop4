@@ -59,5 +59,18 @@ public class MenuItemDAO {
         ps.executeUpdate();
         conn.close();
     }
+    public static void updatePrice(String name, double price) throws SQLException {
+        String sql = "UPDATE menu_item SET price = ? WHERE name = ?";
+
+        Connection conn = DBConnection.getConnection();
+        PreparedStatement ps = conn.prepareStatement(sql);
+
+        ps.setDouble(1, price);   // ✅ ВАЖНО
+        ps.setString(2, name);
+
+        ps.executeUpdate();
+        conn.close();
+    }
+
 }
 
