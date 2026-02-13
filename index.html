@@ -2,76 +2,158 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>OOP4 Project</title>
+    <title>OOP4 Project | Zhansaya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-        header {
-            background-color: #1f2937;
-            color: white;
-            padding: 20px;
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f8fafc, #e2e8f0);
+            color: #1e293b;
+        }
+
+        nav {
+            background: #111827;
+            padding: 15px 0;
             text-align: center;
         }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: #1f2937;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
         section {
-            max-width: 800px;
-            margin: 40px auto;
-            background: white;
+            max-width: 1000px;
+            margin: 50px auto;
             padding: 30px;
-            border-radius: 8px;
         }
-        h2 {
-            color: #111827;
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
         }
+
+        .card h2 {
+            margin-bottom: 15px;
+            color: #0f172a;
+        }
+
         ul {
             line-height: 1.8;
         }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #2563eb;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
         footer {
             text-align: center;
-            padding: 15px;
-            color: gray;
-        }
-        a {
-            color: #2563eb;
-            text-decoration: none;
+            padding: 20px;
+            background: #111827;
+            color: white;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
 
+<nav>
+    <a href="#about">About</a>
+    <a href="#features">OOP Concepts</a>
+    <a href="#structure">Project Structure</a>
+    <a href="#github">GitHub</a>
+</nav>
+
 <header>
     <h1>OOP4 Java Project</h1>
-    <p>Object-Oriented Programming | Java</p>
+    <p>Object-Oriented Programming Implementation in Java</p>
 </header>
 
 <section>
-    <h2> Project Description:</h2>
-    <p>
-        This project demonstrates the principles of Object-Oriented Programming (OOP)
-        implemented in Java. The code follows core OOP concepts such as encapsulation,
-        inheritance, polymorphism, and abstraction.
-    </p>
 
-    <h2>🛠 Technologies used:</h2>
-    <ul>
-        <li>Java</li>
-        <li>Maven</li>
-        <li>Object-Oriented Programming</li>
-    </ul>
+    <div class="card" id="about">
+        <h2>📌 About the Project</h2>
+        <p>
+            This project was developed as part of an Object-Oriented Programming course.
+            It demonstrates fundamental OOP principles through structured Java classes
+            and modular design using Maven.
+        </p>
+    </div>
 
-    <h2> GitHub Repository</h2>
-    <p>
-        <a href="https://github.com/yerzhansaya/oop4" target="_blank">
-            You can View source code on GitHub
+    <div class="card" id="features">
+        <h2>⚙ OOP Concepts Implemented</h2>
+        <ul>
+            <li><b>Encapsulation</b> – Private fields with public getters/setters</li>
+            <li><b>Inheritance</b> – Parent and child class relationships</li>
+            <li><b>Polymorphism</b> – Method overriding and dynamic behavior</li>
+            <li><b>Abstraction</b> – Use of abstract classes/interfaces</li>
+        </ul>
+    </div>
+
+    <div class="card" id="structure">
+        <h2>📂 Project Structure</h2>
+        <ul>
+            <li>src/main/java – Source code</li>
+            <li>pom.xml – Maven configuration</li>
+            <li>index.html – Project web presentation</li>
+        </ul>
+    </div>
+
+    <div class="card" id="github">
+        <h2>🚀 Source Code</h2>
+        <p>You can explore the full Java implementation on GitHub:</p>
+        <a href="https://github.com/yerzhansaya/oop4" target="_blank" class="btn">
+            View on GitHub
         </a>
-    </p>
+    </div>
+
 </section>
 
 <footer>
-    © 2026 Zhansaya | OOP4 Project
+    © 2026 Zhansaya | OOP
 </footer>
 
 </body>
